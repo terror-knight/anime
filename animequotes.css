@@ -1,0 +1,135 @@
+
+@media only screen and (max-width: 600px) {
+    .profile {
+      overflow-y: auto; /* or scroll based on your preference */
+    }
+  }
+*{
+    box-sizing: border-box;
+}
+@keyframes slidelogo{
+    from{
+        transform: translateX(-1260px);
+    }
+    to{
+        transform: translateX(1260px);
+    }
+}
+.logo{
+    transform: translatey(-900px);
+    width: 1260px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    animation: slidelogo 1s cubic-bezier(.15,0.90,.75,0.10) 0s 1 normal;
+}
+.logos{
+    transform: translatey(-1190px);scale: 20%;
+    position:absolute;
+    width: 1260px;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+ margin: 0px;
+background-color: rgb(255, 255, 255);
+margin-top: -22px;
+overflow-x: hidden;
+
+background-position: center;
+background-attachment:fixed;
+}
+h1{
+    background-color:rgb(255, 181, 71);
+    color: grey;
+}
+.choose .chose{
+    padding: 10px;
+background-color: rgb(195, 140, 59);;
+}
+.mop{
+
+    background-color:rgb(255, 181, 71);
+    padding: 9px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+ul{
+    padding: 0px;
+    overflow: hidden;
+}
+ul li{
+    list-style-type: none;
+   padding: 10px;
+    text-decoration: none;
+    text-align: center;
+   float:left;
+  
+}
+.choose{
+    text-align: center;
+}
+.choose a{
+   margin-bottom: 0px;
+    padding: 9px;
+}
+.mop a{
+    background-color:rgb(255, 181, 71);
+    color: grey ;
+    text-decoration: none;
+}
+.mop a:hover{
+  
+    color: white;
+}
+ul li a:hover{
+  
+    color: white;
+}
+.profile{
+    display: inline-block;
+    margin: 10px;
+    border: 4px solid rgb(177,177,177) ;
+    height:290px;
+    width:155px;
+}
+.profile h3{
+    text-align: center;
+}
+
+.profile p{
+    text-align: center;
+}
+.profile .imagg{
+    height: 100px;
+    margin-left: 20px;
+}
+.nlink{
+    text-decoration: none;
+    color: rgb(177,177,177) ;
+    display: inline;
+    font-size: 2x;
+}
+.nlink:hover .profile{ 
+    border-color: rgb(234, 166, 64);
+    color: rgb(234, 166, 64);
+ transform: translateY(-20px);
+ transition: transform 0.3s ease-out 0s;
+}
+
+
+.nlink .desc{
+   
+padding: 0px;
+}
+.nlink:active .profile{
+border-color: rgb(255, 60, 0);
+color: rgb(255, 60, 0);
+}
+.nlink .profile{
+    transition: transform 0.3s ease-out 0s;
+}
+.nlink:hover:not(:hover) .profile{
+    transform: translateY(0px);
+}
